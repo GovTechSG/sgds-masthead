@@ -10,7 +10,8 @@ export class SgdsMasthead {
 
   @Prop() sgCrest = "sg-crest.svg";
   @Prop() chevron = "chevron-up.svg";
-  @Prop() fluid: 'fluid';
+  /** for full width masthead, add attribute `fluid` */
+  @Prop() fluid:boolean;
   @State() isOpen:boolean = false;
 
   handleCloseClick() {
@@ -24,7 +25,7 @@ export class SgdsMasthead {
           <div 
             class={{
               'container' : true,
-              'is-fluid': this.fluid === 'fluid'
+              'is-fluid': this.fluid === true
             }}
           >
             <div class="columns">

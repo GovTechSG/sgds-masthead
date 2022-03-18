@@ -8,7 +8,10 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SgdsMasthead {
         "chevron": string;
-        "fluid": 'fluid';
+        /**
+          * for full width masthead, add attribute `fluid`
+         */
+        "fluid": boolean;
         "sgCrest": string;
     }
 }
@@ -26,7 +29,10 @@ declare global {
 declare namespace LocalJSX {
     interface SgdsMasthead {
         "chevron"?: string;
-        "fluid"?: 'fluid';
+        /**
+          * for full width masthead, add attribute `fluid`
+         */
+        "fluid"?: boolean;
         "sgCrest"?: string;
     }
     interface IntrinsicElements {
