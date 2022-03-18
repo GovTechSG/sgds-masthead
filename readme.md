@@ -8,22 +8,24 @@ Add the following code to your page.
 
 ```
 <head>
-...
-<script type="module" src="https://cdn.jsdelivr.net/npm/@govtechsg/sgds-masthead/dist/sgds-masthead/sgds-masthead.js"></script>
-...
+    ...
+    <script 
+        type="module" 
+        src="https://cdn.jsdelivr.net/npm/@govtechsg/sgds-masthead/dist/sgds-masthead/sgds-masthead.js">
+    </script>
+    ...
 </head>
 
 <body>
-...
-<sgds-masthead></sgds-masthead>
-...
+    ...
+    <sgds-masthead></sgds-masthead>
+    ...
 </body>
 ```
-
 ## Properties
 
-| Property  | Attribute  | Description                                            | Type      | Default            |
-| --------- | ---------- | ------------------------------------------------------ | --------- | ------------------ |
-| `chevron` | `chevron`  |                                                        | `string`  | `"chevron-up.svg"` |
-| `fluid`   | `fluid`    | for full width masthead, add attribute `fluid="fluid"` | `"fluid"` | `undefined`        |
-| `sgCrest` | `sg-crest` |                                                        | `string`  | `"sg-crest.svg"`   |
+| Property  | Attribute  | Description                                    | Type      | Default            |
+| --------- | ---------- | ---------------------------------------------- | --------- | ------------------ |
+| `chevron` | `chevron`  |                                                | `string`  | `"chevron-up.svg"` |
+| `fluid`   | `fluid`    | for full width masthead, add attribute `fluid` | `boolean` | `undefined`        |
+| `sgCrest` | `sg-crest` |                                                | `string`  | `"sg-crest.svg"`   |

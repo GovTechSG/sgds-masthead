@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property  | Attribute  | Description                                            | Type      | Default            |
-| --------- | ---------- | ------------------------------------------------------ | --------- | ------------------ |
-| `chevron` | `chevron`  |                                                        | `string`  | `"chevron-up.svg"` |
-| `fluid`   | `fluid`    | for full width masthead, add attribute `fluid="fluid"` | `"fluid"` | `undefined`        |
-| `sgCrest` | `sg-crest` |                                                        | `string`  | `"sg-crest.svg"`   |
+| Property  | Attribute  | Description                                    | Type      | Default            |
+| --------- | ---------- | ---------------------------------------------- | --------- | ------------------ |
+| `chevron` | `chevron`  |                                                | `string`  | `"chevron-up.svg"` |
+| `fluid`   | `fluid`    | for full width masthead, add attribute `fluid` | `boolean` | `undefined`        |
+| `sgCrest` | `sg-crest` |                                                | `string`  | `"sg-crest.svg"`   |
 
 
 ----------------------------------------------
