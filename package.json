@@ -1,7 +1,7 @@
 {
-  "name": "sgds-masthead",
+  "name": "@govtechsg/sgds-masthead",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "sgds masthead",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
@@ -9,10 +9,10 @@
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/sgds-masthead/sgds-masthead.esm.js",
+  "unpkg": "dist/@govtechsg/sgds-masthead/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/GovTechSG/sgds-masthead"
   },
   "files": [
     "dist/",
