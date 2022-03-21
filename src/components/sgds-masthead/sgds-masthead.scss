@@ -1,9 +1,9 @@
 /**
-    * @prop --font-family: Primary font family. Default to system fonts.
-    * @prop --link-color: Link color. Default to #4372d6.
-    * @prop --link-hover-color: Link hover color. Default to #3a79ff.
-    * @prop --tablet-padding-x: Left and right padding for tablet view 1024px. Default to 1.25rem.
-    * @prop --tablet-font-size: Font size for tablet view 1024px. Default to 0.75rem.
+    * @prop --sgds-masthead-font-family: Primary font family. Default to system fonts.
+    * @prop --sgds-masthead-link-color: Link color. Default to #4372d6.
+    * @prop --sgds-masthead-link-hover-color: Link hover color. Default to #3a79ff.
+    * @prop --sgds-masthead-tablet-padding-x: Left and right padding for tablet view 1024px. Default to 1.25rem.
+    * @prop --sgds-masthead-tablet-font-size: Font size for tablet view 1024px. Default to 0.75rem.
 
 */
 
@@ -21,18 +21,18 @@ $breakpoint: 1024px;
   p{
     margin-bottom: none;
   }
-  font-family: var(--font-family);
+  font-family: var(--sgds-masthead-font-family);
   color: #484848;
   font-size: 0.875rem;
   @include until($breakpoint) {
-    font-size: var(--tablet-font-size);
+    font-size: var(--sgds-masthead-tablet-font-size);
   }
 }
 .sg-crest{
   width: 20px;
   height: 28px;
   @include until($breakpoint) {
-    font-size: var(--tablet-font-size);
+    font-size: var(--sgds-masthead-tablet-font-size);
   }
 }
 
@@ -47,9 +47,9 @@ $breakpoint: 1024px;
 
 a.trusted-websites-link{
   &:hover{
-    color: var(--link-hover-color);
+    color: var(--sgds-masthead-link-hover-color);
     .trusted-websites-icon{
-      fill: var(--link-hover-color);
+      fill: var(--sgds-masthead-link-hover-color);
     }
   }
 }
@@ -61,8 +61,8 @@ a.trusted-websites-link{
   padding-top: 0;
   padding-bottom: 0;
   @include until($breakpoint) {
-    padding-left: var(--tablet-padding-x);
-    padding-right: var(--tablet-padding-x);
+    padding-left: var(--sgds-masthead-tablet-padding-x);
+    padding-right: var(--sgds-masthead-tablet-padding-x);
   }
 }
 
@@ -80,7 +80,7 @@ a.trusted-websites-link{
   }
 }
 .link-color,a{
-  color: var(--link-color);
+  color: var(--sgds-masthead-link-color);
 }
 .sgds-masthead-content{
   padding-top: 3rem;
@@ -112,7 +112,7 @@ a.trusted-websites-link{
     }
 
     @include until($breakpoint) {
-      font-size: var(--tablet-font-size);
+      font-size: var(--sgds-masthead-tablet-font-size);
       gap: 0.5rem;
       .content{
         .title{
@@ -144,7 +144,7 @@ a.trusted-websites-link{
       
     }
     &-icon{
-      fill: var(--link-color);
+      fill: var(--sgds-masthead-link-color);
       margin-left: 2px;
       @include until($breakpoint) {
         width: 12px;
