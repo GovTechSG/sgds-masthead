@@ -1,10 +1,18 @@
+/**
+    * @prop --font-family: Primary font family. Default to system fonts.
+    * @prop --link-color: Link color. Default to #4372d6.
+    * @prop --link-hover-color: Link hover color. Default to #3a79ff.
+    * @prop --tablet-padding-x: Left and right padding for tablet view 1024px. Default to 1.25rem.
+    * @prop --tablet-font-size: Font size for tablet view 1024px. Default to 0.75rem.
+
+*/
+
 @charset "utf-8";
 $breakpoint: 1024px;
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";
 @import "~bulma/sass/elements/container.sass";
 @import "~bulma/sass/grid/_all.sass";
-
 
 .sgds-masthead {
   padding: 0;
@@ -17,12 +25,15 @@ $breakpoint: 1024px;
   color: #484848;
   font-size: 0.875rem;
   @include until($breakpoint) {
-    font-size: 0.75rem;
+    font-size: var(--tablet-font-size);
   }
 }
 .sg-crest{
   width: 20px;
   height: 28px;
+  @include until($breakpoint) {
+    font-size: var(--tablet-font-size);
+  }
 }
 
 .container{
@@ -63,7 +74,7 @@ a.trusted-websites-link{
 .sgds-masthead-button{
   display: flex;
   align-items: center;
-  margin-left: 0.25rem;
+  
   .is-text{
     text-decoration: underline;
   }
@@ -101,7 +112,7 @@ a.trusted-websites-link{
     }
 
     @include until($breakpoint) {
-      font-size: 0.75rem;
+      font-size: var(--tablet-font-size);
       gap: 0.5rem;
       .content{
         .title{
