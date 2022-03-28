@@ -7,7 +7,6 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SgdsMasthead {
-        "chevron": string;
         /**
           * for full width masthead, add attribute `fluid`
          */
@@ -28,7 +27,6 @@ declare global {
 }
 declare namespace LocalJSX {
     interface SgdsMasthead {
-        "chevron"?: string;
         /**
           * for full width masthead, add attribute `fluid`
          */
