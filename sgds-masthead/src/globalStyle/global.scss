@@ -10,12 +10,12 @@
     --sgds-masthead-crest-color: rgb(239, 51, 32);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root{
-    --sgds-masthead-background-color: hsl(240, 6%, 10%);
-    --sgds-masthead-text-color: hsl(0, 0%, 78%);
-    --sgds-masthead-link-color: hsl(221, 64%, 75%);
-    --sgds-masthead-link-hover-color: hsl(221, 100%, 71%);
-    --sgds-masthead-crest-color: hsl(0, 100%, 54%);
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   :root{
+//     --sgds-masthead-background-color: hsl(240, 6%, 10%);
+//     --sgds-masthead-text-color: hsl(0, 0%, 78%);
+//     --sgds-masthead-link-color: hsl(221, 64%, 75%);
+//     --sgds-masthead-link-hover-color: hsl(221, 100%, 71%);
+//     --sgds-masthead-crest-color: hsl(0, 100%, 54%);
+//   }
+// }
