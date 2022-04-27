@@ -1,6 +1,6 @@
 {
   "name": "@govtechsg/sgds-masthead-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "scripts": {
     "build": "npm run clean && npm run compile",
