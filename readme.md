@@ -9,6 +9,7 @@ Add the following code to your page.
 ```
 <head>
     ...
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@govtechsg/sgds-masthead/dist/sgds-masthead/sgds-masthead.css">
     <script 
         type="module" 
         src="https://cdn.jsdelivr.net/npm/@govtechsg/sgds-masthead/dist/sgds-masthead/sgds-masthead.js">
