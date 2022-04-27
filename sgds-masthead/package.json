@@ -35,7 +35,7 @@
     "bulma": "^0.9.3",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
-    "puppeteer": "^10.0.0"
+    "puppeteer": "^13.6.0"
   },
   "license": "MIT"
 }
