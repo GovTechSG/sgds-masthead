@@ -14,7 +14,7 @@ export const config: Config = {
     react({
       componentCorePackage: '@govtechsg/sgds-masthead',
       proxiesFile: '../sgds-masthead-react/src/components/stencil-generated/index.ts',
-      includeDefineCustomElements: false,
+      includeDefineCustomElements: true,
     }),
     {
       type: 'dist',
