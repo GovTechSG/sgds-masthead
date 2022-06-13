@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import { reactOutputTarget as react } from '@stencil/react-output-target';
+import { angularOutputTarget } from '@stencil/angular-output-target';
 import { sass } from '@stencil/sass';
 
 export const config: Config = {
@@ -15,6 +16,11 @@ export const config: Config = {
       componentCorePackage: '@govtechsg/sgds-masthead',
       proxiesFile: '../sgds-masthead-react/src/components/stencil-generated/index.ts',
       includeDefineCustomElements: true,
+    }),
+    angularOutputTarget({
+      componentCorePackage: '@govtechsg/sgds-masthead',
+      directivesProxyFile: '../sgds-masthead-angular/projects/component-library/src/lib/stencil-generated/components.ts',
+      directivesArrayFile: '../sgds-masthead-angular/projects/component-library/src/lib/stencil-generated/index.ts',
     }),
     {
       type: 'dist',
