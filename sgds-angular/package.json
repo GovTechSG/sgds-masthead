@@ -1,5 +1,5 @@
 {
-  "name": "sgds-angular",
+  "name": "@govtechsg/sgds-angular",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
