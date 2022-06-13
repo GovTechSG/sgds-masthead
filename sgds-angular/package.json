@@ -1,6 +1,6 @@
 {
   "name": "@govtechsg/sgds-angular",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,6 +10,7 @@
     "build:component": "cd projects/sgds-angular-component && npm ci",
     "build:prod": "npm ci && npm run build"
   },
+  "private": false,
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
