@@ -19,8 +19,8 @@ jobs:
         uses: EndBug/version-check@v2.1.0
         id: check
         with:
-          file-name: ./sgds-angular/package.json
-      - run: npm publish --tag latest ./sgds-angular
+          file-name: ./sgds-angular/projects/sgds-angular-component/package.json
+      - run: npm publish --tag latest ./sgds-angular/dist/sgds-angular-component
         if: steps.check.outputs.changed == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
