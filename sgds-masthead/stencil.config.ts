@@ -19,8 +19,8 @@ export const config: Config = {
     }),
     angularOutputTarget({
       componentCorePackage: '@govtechsg/sgds-masthead',
-      directivesProxyFile: '../sgds-masthead-angular/projects/component-library/src/lib/stencil-generated/components.ts',
-      directivesArrayFile: '../sgds-masthead-angular/projects/component-library/src/lib/stencil-generated/index.ts',
+      directivesProxyFile: '../sgds-angular/projects/sgds-angular-component/src/lib/stencil-generated/components.ts',
+      directivesArrayFile: '../sgds-angular/projects/sgds-angular-component/src/lib/stencil-generated/index.ts',
     }),
     {
       type: 'dist',

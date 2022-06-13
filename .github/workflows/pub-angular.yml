@@ -14,13 +14,13 @@ jobs:
         with:
           node-version: 12
           registry-url: "https://registry.npmjs.org"
-      - run: cd sgds-masthead-angular && npm ci && npm run build
+      - run: cd sgds-angular && npm ci && npm run build
       - name: Version Check
         uses: EndBug/version-check@v2.1.0
         id: check
         with:
-          file-name: ./sgds-masthead-angular/package.json
-      - run: npm publish --tag latest ./sgds-masthead-angular
+          file-name: ./sgds-angular/package.json
+      - run: npm publish --tag latest ./sgds-angular
         if: steps.check.outputs.changed == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

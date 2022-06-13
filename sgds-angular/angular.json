@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "component-library": {
+    "sgds-angular-component": {
       "projectType": "library",
-      "root": "projects/component-library",
-      "sourceRoot": "projects/component-library/src",
+      "root": "projects/sgds-angular-component",
+      "sourceRoot": "projects/sgds-angular-component/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/component-library/ng-package.json"
+            "project": "projects/sgds-angular-component/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/component-library/tsconfig.lib.prod.json"
+              "tsConfig": "projects/sgds-angular-component/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/component-library/tsconfig.lib.json"
+              "tsConfig": "projects/sgds-angular-component/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,12 +27,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/component-library/src/test.ts",
-            "tsConfig": "projects/component-library/tsconfig.spec.json",
-            "karmaConfig": "projects/component-library/karma.conf.js"
+            "main": "projects/sgds-angular-component/src/test.ts",
+            "tsConfig": "projects/sgds-angular-component/tsconfig.spec.json",
+            "karmaConfig": "projects/sgds-angular-component/karma.conf.js"
           }
         }
       }
     }
-  }
+  },
+  "defaultProject": "sgds-angular-component"
 }
