@@ -10,7 +10,6 @@
     "build:component": "cd projects/sgds-angular-component && npm ci",
     "build:prod": "npm ci && npm run build"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
