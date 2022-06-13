@@ -21,6 +21,7 @@ export const config: Config = {
       componentCorePackage: '@govtechsg/sgds-masthead',
       directivesProxyFile: '../sgds-angular/projects/sgds-angular-component/src/lib/stencil-generated/components.ts',
       directivesArrayFile: '../sgds-angular/projects/sgds-angular-component/src/lib/stencil-generated/index.ts',
+      includeImportCustomElements: true,
     }),
     {
       type: 'dist',

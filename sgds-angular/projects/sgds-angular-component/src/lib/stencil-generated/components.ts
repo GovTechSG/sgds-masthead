@@ -3,15 +3,15 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, NgZone } from '@angular/core';
 import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
-import { Components } from '@govtechsg/sgds-masthead';
+import type { Components } from '@govtechsg/sgds-masthead/dist/components';
 
-
+import { defineCustomElement as defineSgdsMasthead } from '@govtechsg/sgds-masthead/dist/components/sgds-masthead.js';
 
 
 export declare interface SgdsMasthead extends Components.SgdsMasthead {}
 
 @ProxyCmp({
-  defineCustomElementFn: undefined,
+  defineCustomElementFn: defineSgdsMasthead,
   inputs: ['fluid', 'sgCrest']
 })
 @Component({
