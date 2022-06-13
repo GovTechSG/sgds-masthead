@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:component": "cd projects/sgds-angular-component && npm ci",
+    "build:prod": "npm ci && npm run build"
   },
   "private": true,
   "dependencies": {
