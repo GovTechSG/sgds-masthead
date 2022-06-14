@@ -1,27 +1,23 @@
 # SgdsAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.17.
+This README describes the process to generate the components for Angular. To consume the components, please refer to the main README in the core SGDS Stencil library.
 
-## Development server
+## Generate Angular components from Stencil
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Go to core stencil library `cd ../sgds-masthead` and run `npm run build`. If the build is successful, you will see files in the `projects/sgds-angular-component/src/lib/stencil-generated` directory
+Take note in this directory, there is a `components.ts` file. Make sure the path for @govtechsg/sgds-masthead is correct else you cannot proceed with the angular build
 
-## Code scaffolding
+```
+...
+import type { Components } from '@govtechsg/sgds-masthead/dist/components';
+import { defineCustomElement as defineSgdsMasthead } from '@govtechsg/sgds-masthead/dist/components/sgds-masthead.js';
+...
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+## Angular Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Publish
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `npm publish --tag latest ./dist/sgds-angular-component` to publish the project.
