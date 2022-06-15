@@ -43,7 +43,7 @@ export class SgdsMasthead {
 <path fill="#C52F19" d="M16.093 6.845c8.005-0.24 10.863 9.357 5.693 13.676l-5.191 2.509c0 0-0.676-2.181 1.833-4.734 2.509-2.551 4.929-7.328-2.006-10.469 0 0 0.131-0.654-0.327-0.981z"></path>
 <path fill="#C52F19" d="M15.678 9.004c0 0 0.393-0.371 0.524-0.676 5.954 2.486 5.017 6.697 1.461 10.23-2.181 2.246-1.505 4.668-1.505 4.668s-2.66 1.657-3.577 3.097c0 0-3.852-3.28 1.483-8.724 5.235-5.344 1.614-8.594 1.614-8.594z"></path>
 </svg>
-                  <div class="is-text">A Singapore Government Agency Websites</div>        
+                  <div class="is-text">A Singapore Government Agency Website</div>        
                   <div 
                     class="sgds-masthead-button" 
                     id="sgds-masthead-identify" 
