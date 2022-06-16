@@ -4,7 +4,7 @@ Framework | README Location
 ------------ | -------------
 VanillaJS | ./sgds-masthead
 Angular | ./sgds-angular/projects/sgds-angular-component
-React | ./sgds-react
+React | ./sgds-masthead-react
 
 ### Publish all the libraries
 
@@ -15,5 +15,5 @@ Do this in a single commit
 3. [FOR ANGULAR] Update the package version and the dependency version of sgds-masthead in ./sgds-angular/projects/sgds-angular-component/package.json.
 4. [FOR ANGULAR] In sgds-angular/projects/sgds-angular-component directory, run ```npm install``` to update the package-lock.json.
 5. [FOR REACT] Update the package version and the dependency version of sgds-masthead in ./sgds-masthead-react/package.json
-6. [FOR REACT] In sgds-react directory, run ```npm install``` to update the package-lock.json.
+6. [FOR REACT] In sgds-masthead-react directory, run ```npm install``` to update the package-lock.json.
 7. Git commit all changes and git actions will publish the library
