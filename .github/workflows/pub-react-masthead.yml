@@ -21,6 +21,6 @@ jobs:
         with:
           file-name: ./sgds-masthead-react/package.json
       - run: npm publish --tag latest ./sgds-masthead-react
-        if: steps.check.outputs.changed == 'true'
+        # if: steps.check.outputs.changed == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
