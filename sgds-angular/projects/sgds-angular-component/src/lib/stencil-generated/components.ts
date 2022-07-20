@@ -3,9 +3,9 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, NgZone } from '@angular/core';
 import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
-import type { Components } from '@govtechsg/sgds-masthead/dist/components';
+import type { Components } from '@govtechsg/sgds-masthead/components';
 
-import { defineCustomElement as defineSgdsMasthead } from '@govtechsg/sgds-masthead/dist/components/sgds-masthead.js';
+import { defineCustomElement as defineSgdsMasthead } from '@govtechsg/sgds-masthead/components/sgds-masthead.js';
 
 
 export declare interface SgdsMasthead extends Components.SgdsMasthead {}
