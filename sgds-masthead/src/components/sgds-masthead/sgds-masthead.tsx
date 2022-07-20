@@ -22,8 +22,9 @@ export class SgdsMasthead {
     return (
       <Host>
         <div 
+          id="sgds-masthead"
           class="sgds-masthead"
-          aria-expanded={this.isOpen ? "true" : "false"}
+          aria-label="A Singapore Government Agency Website"
         >
           <div 
             class={{
@@ -48,6 +49,9 @@ export class SgdsMasthead {
                     class="sgds-masthead-button" 
                     id="sgds-masthead-identify" 
                     onClick={this.handleCloseClick.bind(this)}
+                    role="button"
+                    aria-expanded={this.isOpen ? "true" : "false"}
+                    aria-controls="sgds-masthead-content"
                   >
                       <span class="is-text sgds-masthead-button-text link-color">
                           How to identify
@@ -66,6 +70,7 @@ export class SgdsMasthead {
             </div>
           </div>
           <div
+            id="sgds-masthead-content"
             class={this.isOpen ? 'container sgds-masthead-content' : 'container sgds-masthead-content hide'}
           >
             <div class="columns">
