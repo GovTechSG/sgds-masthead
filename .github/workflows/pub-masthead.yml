@@ -15,12 +15,12 @@ jobs:
           node-version: 12
           registry-url: "https://registry.npmjs.org"
       - run: cd sgds-masthead && npm ci && npm run build
-      # - name: Version Check
-      #   uses: EndBug/version-check@v2.1.0
-      #   id: check
-      #   with:
-      #     file-name: ./sgds-masthead/package.json
+      - name: Version Check
+        uses: EndBug/version-check@v2.1.0
+        id: check
+        with:
+          file-name: ./sgds-masthead/package.json
       - run: npm publish --tag latest ./sgds-masthead
-        # if: steps.check.outputs.changed == 'true'
+        if: steps.check.outputs.changed == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
