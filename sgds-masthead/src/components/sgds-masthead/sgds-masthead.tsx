@@ -53,7 +53,7 @@ export class SgdsMasthead {
                     aria-expanded={this.isOpen ? "true" : "false"}
                     aria-controls="sgds-masthead-content"
                   >
-                      <span class="is-text sgds-masthead-button-text link-color">
+                      <span class="is-text sgds-masthead-button-text">
                           How to identify
                       </span>
                       <svg 

@@ -77,16 +77,28 @@ a.trusted-websites-link{
   align-items: center;
   gap: 0.25rem;
 }
+
 .sgds-masthead-button{
   display: flex;
   align-items: center;
+  color: var(--sgds-masthead-identify-color);
+  cursor: pointer;
+
+  &:hover{
+    color: var(--sgds-masthead-identify-hover-color);
+  }
   
   .is-text{
     text-decoration: underline;
   }
 }
+
 .link-color,a{
   color: var(--sgds-masthead-link-color);
+
+  &:hover{
+    color: var(--sgds-masthead-link-hover-color);
+  }
 }
 .sgds-masthead-content{
   padding-top: 2.5rem;
@@ -183,9 +195,6 @@ a.trusted-websites-link{
   height: 21px;
   display: block;
   transform: rotate(0deg);
-  path{
-    fill: var(--sgds-masthead-link-color);
-  }
   -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: -moz-none;
@@ -201,6 +210,3 @@ a.trusted-websites-link{
   display: none;
 }
 
-.sgds-masthead-button{
-  cursor:pointer;
-}
