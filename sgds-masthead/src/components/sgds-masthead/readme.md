@@ -18,7 +18,8 @@
 | `--sgds-masthead-identify-hover-color` | Color for "How to identify" button hovered. Default to #23489b.    |
 | `--sgds-masthead-link-color`           | Link color. Default to #4372d6.                                    |
 | `--sgds-masthead-link-hover-color`     | Link hover color. Default to #3a79ff.                              |
-| `--sgds-masthead-tablet-font-size`     | Font size for tablet view 1024px. Default to 0.75rem.              |
+| `--sgds-masthead-tablet-font-size`     | Font size for tablet view 1024px and below. Default to 0.75rem.    |
+| `--sgds-masthead-mobile-font-size`     | Font size for mobile view 576px and below. Default to 0.6875.      |
 | `--sgds-masthead-tablet-padding-x`     | Left and right padding for tablet view 1024px. Default to 1.25rem. |
 
 ---

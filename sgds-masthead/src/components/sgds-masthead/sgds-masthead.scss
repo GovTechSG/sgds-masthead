@@ -8,7 +8,14 @@
 */
 
 @charset "utf-8";
-$breakpoint: 1024px;
+$breakpoint-tablet: 1024px;
+// reference bootstrap's breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";
 @import "~bulma/sass/elements/container.sass";
@@ -24,8 +31,11 @@ $breakpoint: 1024px;
   font-family: var(--sgds-masthead-font-family);
   color: var(--sgds-masthead-text-color);
   font-size: 0.875rem;
-  @include until($breakpoint) {
+  @include until($breakpoint-tablet) {
     font-size: var(--sgds-masthead-tablet-font-size);
+  }
+  @include until($breakpoint-sm) {
+    font-size: var(--sgds-masthead-mobile-font-size);
   }
 }
 .sg-crest{
@@ -34,14 +44,14 @@ $breakpoint: 1024px;
   path{
     fill: var(--sgds-masthead-crest-color);
   }
-  @include until($breakpoint) {
+  @include until($breakpoint-tablet) {
     font-size: var(--sgds-masthead-tablet-font-size);
   }
 }
 
 .container{
   &.is-fluid{
-    @include until($breakpoint) {
+    @include until($breakpoint-tablet) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -66,7 +76,7 @@ a.trusted-websites-link{
 .column{
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  @include until($breakpoint) {
+  @include until($breakpoint-tablet) {
     padding-left: var(--sgds-masthead-tablet-padding-x);
     padding-right: var(--sgds-masthead-tablet-padding-x);
   }
@@ -103,7 +113,7 @@ a.trusted-websites-link{
 .sgds-masthead-content{
   padding-top: 2.5rem;
   padding-bottom: 3rem;
-  @include until($breakpoint) {
+  @include until($breakpoint-tablet) {
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
@@ -111,7 +121,7 @@ a.trusted-websites-link{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10rem;
-    @include until($breakpoint) {
+    @include until($breakpoint-tablet) {
       grid-template-columns: 1fr;
       gap: 2rem;
     }
@@ -133,7 +143,7 @@ a.trusted-websites-link{
       }
     }
 
-    @include until($breakpoint) {
+    @include until($breakpoint-tablet) {
       font-size: var(--sgds-masthead-tablet-font-size);
       gap: 0.5rem;
       .content{
@@ -147,7 +157,7 @@ a.trusted-websites-link{
     }
   }
   .icon{
-    @include until($breakpoint) {
+    @include until($breakpoint-tablet) {
     margin-top: 0.15rem;
     }
   }
@@ -164,7 +174,7 @@ a.trusted-websites-link{
       }
       
     }
-    @include until($breakpoint) {
+    @include until($breakpoint-tablet) {
       width: 12px;
       &-inline{
         width: 0.6rem;
@@ -183,7 +193,7 @@ a.trusted-websites-link{
     &-icon{
       fill: var(--sgds-masthead-link-color);
       margin-left: 2px;
-      @include until($breakpoint) {
+      @include until($breakpoint-tablet) {
         width: 12px;
       }
     }
