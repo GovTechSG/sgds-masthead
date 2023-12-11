@@ -1,3 +1,8 @@
+> ❗️ The `@govtechsg/sgds-masthead` package is no longer supported
+> 
+> Please use [@govtechsg/sgds-web-component](https://github.com/GovTechSG/sgds-web-component) official government banner instead.
+
+
 ### Note
 This is the repo for the main library. For information to integrate components for different framework, please refer to the respective README.
 Framework | README Location
